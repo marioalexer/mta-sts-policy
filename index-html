@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>nomad-idea</title>
+    <link rel="icon" href="https://nomad-idea.com/favicon_001.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --bg-color-light: #EBEDEA;
+            --text-color-light: #333;
+            --bg-color-dark: #121212;
+            --text-color-dark: #F0F0F0;
+            --btn-color: #289AD1;
+            --btn-hover: #1e7ca6;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            background-color: var(--bg-color-light);
+            color: var(--text-color-light);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .logo-container img {
+            width: 160px;
+            height: auto;
+            transition: transform 0.2s ease;
+        }
+
+        .logo-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .tagline {
+            margin-top: 1rem;
+            font-size: 1rem;
+            font-style: italic;
+        }
+
+        .links {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 220px;
+        }
+
+        .links a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: var(--btn-color);
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+        }
+
+        .links a:hover {
+            background-color: var(--btn-hover);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: var(--bg-color-dark);
+                color: var(--text-color-dark);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo-container">
+        <a href="https://migration.nomad-idea.com/">
+            <img src="https://nomad-idea.com/logo_001.png" alt="nomad-idea logo">
+        </a>
+    </div>
+    
+    <div class="tagline">
+        Movimiento. Estrategia. Impermanencia. Ideas en tránsito.
+    </div>
+
+    <div class="links">
+        <a href="https://www.linkedin.com/in/mario-alejandro-esparza/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/marioalexer" target="_blank">GitHub</a>
+        <a href="https://www.threads.net/@marioalexer" target="_blank">Threads</a>
+        <a href="https://www.instagram.com/marioalexer/" target="_blank">Instagram</a>
+        <a href="https://x.com/marioalexer" target="_blank">X (Twitter)</a>
+        <a href="https://bsky.app/profile/marioalexer.bsky.social" target="_blank">Bluesky</a>
+        <a href="https://www.facebook.com/marioalexer" target="_blank">Facebook</a>
+    </div>
+    
+</body>
+</html>
